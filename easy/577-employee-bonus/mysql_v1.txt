@@ -1,0 +1,7 @@
+# Pushed: 2026-11-27 09:27:38 UTC
+# Difficulty: Easy
+# Runtime: 821 ms
+# Memory: 0B
+
+# Write your MySQL query statement below
+select a.name,b.bonus from  Employee as a left join Bonus as b on (a.empId = b.empId) where b.bonus<1000 or b.bonus is null;
