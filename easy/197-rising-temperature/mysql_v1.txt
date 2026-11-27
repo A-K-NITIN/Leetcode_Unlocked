@@ -1,0 +1,7 @@
+# Pushed: 2026-11-27 07:16:22 UTC
+# Difficulty: Easy
+# Runtime: 470 ms
+# Memory: 0B
+
+# Write your MySQL query statement below
+select b.id from Weather as a cross join Weather as b where datediff(a.recordDate,b.recordDate)= -1 and a.temperature<b.temperature;
