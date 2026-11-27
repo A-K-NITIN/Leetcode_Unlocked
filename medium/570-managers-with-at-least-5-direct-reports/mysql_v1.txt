@@ -1,0 +1,7 @@
+# Pushed: 2026-11-27 15:21:56 UTC
+# Difficulty: Medium
+# Runtime: 292 ms
+# Memory: 0B
+
+# Write your MySQL query statement below
+select b.name from Employee as a inner join Employee as b  on (a.managerId = b.id) group by a.managerId having count(a.id)>= 5
